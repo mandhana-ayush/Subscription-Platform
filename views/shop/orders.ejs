@@ -1,0 +1,31 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/orders.css">
+    </head>
+
+    <body>
+        <%- include('../includes/navigation.ejs') %>
+        <main>
+            <% if (orders.length <= 0) { %>
+                <h1>Nothing there!</h1>
+            <% } else { %>
+                <ul class="orders">
+                    <% orders.forEach(order => { %>
+                        <li class="orders__item">
+                            <h1>Order - # <%= order._id %></h1>
+                            <ul class="orders__products">
+                                <% order.products.forEach(p => { %>
+                                    <li class="orders__products-item"><%= p.product.title %> (<%= p.quantity %>)</li>
+                                <% }); %>
+                            </ul>
+                            <h4>PaymentStatus: <%= order.paymentStatus ? "You have paid for this Order": "You havn't paid for this order" %>
+                            </h4> 
+                            <h4>Contact Info:</h4>
+                            <h5>Address:  <%= order.address.address %></h5>
+                            <h5>Phone No: <%= order.address.phone_no %> </h5>
+                        </li>
+                        
+                    <% }); %>
+                </ul>
+            <% } %>
+        </main>
+        <%- include('../includes/end.ejs') %>
