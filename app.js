@@ -14,9 +14,9 @@ const Product = require('./models/product');
 
 
 require('./passport-setup');
+require('dotenv').config();
 
-const MONGODB_URI =
-  'mongodb://localhost:27017/tutorial_test2';
+const MONGODB_URI = process.env.MONGO_URI;
 
 const app = express();
 
