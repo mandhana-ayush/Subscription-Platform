@@ -1,6 +1,8 @@
 const Product = require('../models/product');
 const Order = require('../models/order');
-const stripe = require('stripe')('sk_test_51K87orSJQASQhGgAOOHSG0LlkgoWkuzRGUK8tOqO2tMkqw2JaC4f0bsK0nMKiRfGRsTJVUgy5JtfXQ65oAIToUpV00ZAK16cG3');
+require('dotenv').config();
+
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 exports.getProducts = (req, res, next) => {
   Product.find()
