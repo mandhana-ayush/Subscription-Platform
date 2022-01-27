@@ -1,0 +1,50 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.container{
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.container h2{
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container p{
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.3rem;
+}
+.container p #checkout-button {
+  margin: 4px;
+  padding: 7px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.container p #checkout {
+  margin: 4px;
+  padding: 7px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+/* .has-text-align-center #content{
+  text-align: center;
+}  */

@@ -11,6 +11,16 @@ const userSchema = new Schema({
     type: String, 
     required: true
   },
+  subsId: {
+    type: String,
+  },
+  ispaid: {
+    type: Boolean,
+    default: false,
+  },
+  custId: {
+    type: String,
+  },
   cart: {
     items: [
       {

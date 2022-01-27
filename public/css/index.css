@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.container{
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.container h2{
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.post h4{
+  text-align: center;
+
+}
+.post  p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+.post h3{
+  text-align: center;
+}
+
+.wide-container{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

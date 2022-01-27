@@ -4,25 +4,14 @@
     <nav class="main-header__nav">
         <ul class="main-header__item-list">
             <li class="main-header__item">
-                <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
+                <a class="<%= path === '/' ? 'active' : '' %>" href="/">Home</a>
             </li>
             <li class="main-header__item">
-                <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
+                <a class="<%= path === '/trainings' ? 'active' : '' %>" href="/trainings">Trainings</a>
             </li>
-            <% if (isAuthenticated) { %>
+            <% if (isSubscribed && isAuthenticated) { %>
                 <li class="main-header__item">
-                    <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
-                </li>
-                <li class="main-header__item">
-                    <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
-                </li>
-                <li class="main-header__item">
-                    <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product
-                    </a>
-                </li>
-                <li class="main-header__item">
-                    <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
-                    </a>
+                    <a class="<%= path === '/mysubspage' ? 'active' : '' %>" href="/mysubspage">Subscribed</a>
                 </li>
             <% } %>
         </ul>
@@ -51,25 +40,14 @@
 <nav class="mobile-nav">
     <ul class="mobile-nav__item-list">
         <li class="mobile-nav__item">
-            <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
+            <a class="<%= path === '/' ? 'active' : '' %>" href="/">Home</a>
         </li>
         <li class="mobile-nav__item">
-            <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
+            <a class="<%= path === '/trainings' ? 'active' : '' %>" href="/trainings">Trainings</a>
         </li>
-        <% if (isAuthenticated) { %>
+        <% if (isAuthenticated && isSubscribed) { %>
             <li class="mobile-nav__item">
-                <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product
-                </a>
-            </li>
-            <li class="mobile-nav__item">
-                <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
-                </a>
+                <a class="<%= path === '/mysubspage' ? 'active' : '' %>" href="/mysubspage">Subscribed</a>
             </li>
         <% } %>
         <% if (!isAuthenticated) { %>

@@ -15,12 +15,10 @@
   },
   "dependencies": {
     "@stripe/stripe-js": "^1.22.0",
-    "axios": "^0.24.0",
     "bcrypt": "^5.0.1",
     "body-parser": "^1.18.3",
     "browserify": "^17.0.0",
     "connect-mongodb-session": "^2.0.3",
-    "csurf": "^1.11.0",
     "dotenv": "^10.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",

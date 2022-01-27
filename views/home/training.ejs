@@ -1,0 +1,43 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/training.css">
+</head>
+
+<body>
+  <%- include('../includes/navigation.ejs')  %>
+
+  <div class="container">
+    <h2>Life changing training programs</h2>
+    <div class="wp-block-image">
+      <figure class="aligncenter size-medium is-resized">
+        <img src="https://zenhabits.net/wp-content/uploads/2022/01/fearless-habits-logo@2x-300x66.png" alt="">
+      </figure>
+    </div>
+    <p>
+      <strong>Fearless Habits</strong>
+      is the first pillar of training inside the Fearless Living Academy. You’ll learn how to create basic habits, and the key concepts and methods for changing habits so they stick. You’ll deep into the skills you need to create any habit. You’ll start with a simple habit to create in a month, and learn how to apply the key habit skills to this beginner habit. This will continue to set you up for habit success.
+    </p>
+    <p>
+      You’ll learn to create a simple morning routine and start your day off well. Nourishing rituals, meditation, and focus practices can be a foundation part of a well-lived life. 
+    </p>
+    <p>You’ll start or deepen into the keystone habit of meditation that will help you to create all other habits. The habit of mindfulness helps you to bring awareness to old habits and thought patterns that have been automatic for years.</p>
+
+    <p>
+      Fearless Habits includes 8 additional modules in FLA all designed to help you deepen into sustainable habits that will support your success for the rest of your life.
+    </p>
+
+    <p class="has-text-align-center">
+      <strong>
+        <button id="<%= !isSubscribed? 'checkout-button' : 'checkout' %>" >Subscribe</button>
+      </strong>
+      <% if(isSubscribed){ %>
+        <strong id="content">
+          You have already subscribed!!
+        </strong>
+      <%} %>
+    </p>
+
+    <div style="height: 60px" aria-hidden="true" class="wp-block-spacer"></div>  
+  </div>
+<script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+<script type="text/javascript" src="/js/bundle.js"></script>
+<%- include('../includes/end.ejs') %>

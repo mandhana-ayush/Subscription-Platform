@@ -16,5 +16,6 @@ router.post('/signup', authController.postSignup);
 
 router.post('/logout', authController.postLogout);
 
-router.post('/login/google', )
+// router.post('/login/google', )
+
 module.exports = router;
